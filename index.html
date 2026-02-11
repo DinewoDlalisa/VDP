@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-hearts" aria-hidden="true"></div>
+
+    <main class="layout">
+      <section class="hero card">
+        <p class="eyebrow">For my favorite person 💌</p>
+        <h1>Will you be my Valentine?</h1>
+        <p class="subcopy">
+          I built this little corner of the internet for you. Every heartbeat in this page says the same thing:
+          I choose you, always.
+        </p>
+
+        <div class="cta-row">
+          <button id="yesBtn" class="btn primary">Yes, absolutely 💖</button>
+          <button id="surpriseBtn" class="btn ghost">Show me a surprise</button>
+        </div>
+
+        <p id="response" class="response" aria-live="polite"></p>
+      </section>
+
+      <section class="showcase card">
+        <h2>Our little love gallery</h2>
+        <p>
+          Drop your 3D heart files in
+          <code>assets/hearts/</code>
+          and update the card captions below.
+        </p>
+
+        <div class="heart-grid">
+          <article class="heart-card">
+            <img src="assets/hearts/heart-1.svg" alt="3D heart render" />
+            <h3>First Spark</h3>
+          </article>
+          <article class="heart-card">
+            <img src="assets/hearts/heart-2.svg" alt="3D heart render" />
+            <h3>Growing Love</h3>
+          </article>
+          <article class="heart-card">
+            <img src="assets/hearts/heart-3.svg" alt="3D heart render" />
+            <h3>Forever Us</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="loveNote">
+      <p>
+        Roses are red, violets are blue,<br />
+        every plan gets better when I dream it with you.
+      </p>
+      <button id="closeNote" class="btn primary">Aww 🥰</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
