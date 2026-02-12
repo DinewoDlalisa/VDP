@@ -1,0 +1,131 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1a0a2e, #3d0b5b);
+  color: #fff;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+}
+
+.hero-card h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.hero-card .hero-subtext {
+  margin: 20px 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.hero-buttons button {
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#yesBtn {
+  background: #ff69b4;
+  color: #fff;
+}
+
+#yesBtn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+}
+
+#surpriseBtn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+#surpriseBtn:hover {
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.1);
+}
+
+/* Gallery */
+#gallery {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hearts-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  align-items: stretch; /* ensures equal height */
+}
+
+.heart-card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 25px;
+  width: 220px; /* Bigger container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.heart-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE CONTROL (Fix for 500x500 images) */
+.heart-card img {
+  width: 100%;
+  max-width: 160px;   /* Controls visual size */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.heart-card h3 {
+  margin: 0;
+  font-weight: 500;
+}
+.heart-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.heart-card:nth-child(1) { animation-delay: 0.2s; }
+.heart-card:nth-child(2) { animation-delay: 0.4s; }
+.heart-card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
